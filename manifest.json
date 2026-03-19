@@ -22,6 +22,34 @@
         "blob/0b08695a1c0c6094c2f2f0e29e5472d47f9d8843.nq.gz",
         "blob/491ff56f9400566458292b0956099dcf6360e1ad.nq.gz",
         "blob/da8c81272b4d0bde1b282ea8f6cfb355bb203150.nq.gz"
+      ],
+      "ast": [
+        "aggregate/ast/6847ed76ce77eb9fba10bf954c23058c6949d463.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/6847ed76ce77eb9fba10bf954c23058c6949d463.nq.gz",
+      "repolex": "aggregate/repolex/6847ed76ce77eb9fba10bf954c23058c6949d463.nq.gz",
+      "dep": "dep/6847ed76ce77eb9fba10bf954c23058c6949d463.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "tokio_core",
+          "githubOrg": "tokio-rs",
+          "githubRepo": "tokio-core"
+        },
+        {
+          "packageName": "futures",
+          "githubOrg": "rust-lang",
+          "githubRepo": "futures-rs"
+        },
+        {
+          "packageName": "tokio_io",
+          "githubOrg": "tokio-rs",
+          "githubRepo": "tokio"
+        },
+        {
+          "packageName": "tokio_signal",
+          "githubOrg": "tokio-rs",
+          "githubRepo": "tokio"
+        }
       ]
     }
   ],
