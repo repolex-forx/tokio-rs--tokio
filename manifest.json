@@ -1,0 +1,33 @@
+{
+  "manifest_version": "1.0",
+  "org": "tokio-rs",
+  "repo": "tokio",
+  "versions": [
+    {
+      "commit": "6847ed76ce77eb9fba10bf954c23058c6949d463",
+      "parsed_at": "2026-03-19T21:00:52.619252+00:00",
+      "tag": "0.1.5",
+      "filetree": "filetree/6847ed76ce77eb9fba10bf954c23058c6949d463.nq.gz",
+      "blobs": [
+        "blob/a9d37c560c6ab8d4afbf47eda643e8c42e857716.nq.gz",
+        "blob/16fe87b06e802f094b3fbb0894b137bca2b16ef1.nq.gz",
+        "blob/ae67cac17bd32933fc3da519e2ba7e8585964faf.nq.gz",
+        "blob/6bc5d49f2c3e2df66c16ec6d0a6c828bf0867d21.nq.gz",
+        "blob/d686c27e57bd94899b9fe7eadc9dfa94b061f5c0.nq.gz",
+        "blob/3a67db789eb725ce45c83528ff6fa4c50b88f810.nq.gz",
+        "blob/b7bb3fb7329e43989b33dcfb127fabf1a066ad61.nq.gz",
+        "blob/f6e61d2bbfb318ac1d6fd6c78d4a432deb129345.nq.gz",
+        "blob/3927b25f95c557ac338e946f43a251fa28a29a64.nq.gz",
+        "blob/28e630cf40d23e85e1b1c48eea4c7c2e8afd90f9.nq.gz",
+        "blob/0b08695a1c0c6094c2f2f0e29e5472d47f9d8843.nq.gz",
+        "blob/491ff56f9400566458292b0956099dcf6360e1ad.nq.gz",
+        "blob/da8c81272b4d0bde1b282ea8f6cfb355bb203150.nq.gz"
+      ]
+    }
+  ],
+  "commit": "commit/commit.nq.gz",
+  "branch": "branch/branch.nq.gz",
+  "tag": "tag/tag.nq.gz",
+  "issue": "issue/issue.nq.gz",
+  "pr": "pr/pr.nq.gz"
+}
