@@ -32,23 +32,31 @@
       "dependencies": [
         {
           "packageName": "tokio_core",
+          "packageVersion": "0.1.9",
           "githubOrg": "tokio-rs",
-          "githubRepo": "tokio-core"
+          "githubRepo": "tokio-core",
+          "githubCommit": "8c297a6208520de71629178a37a32fde5340f795"
         },
         {
           "packageName": "futures",
+          "packageVersion": "0.3.9",
           "githubOrg": "rust-lang",
-          "githubRepo": "futures-rs"
+          "githubRepo": "futures-rs",
+          "githubCommit": "1661badd94e417904ba058152c8f60afef7c3efe"
         },
         {
           "packageName": "tokio_io",
+          "packageVersion": "0.2.0-alpha.6",
           "githubOrg": "tokio-rs",
-          "githubRepo": "tokio"
+          "githubRepo": "tokio",
+          "githubCommit": "5efe31f2ed3c797e8055306a05faa3d7e786e7b6"
         },
         {
           "packageName": "tokio_signal",
+          "packageVersion": "0.3.0-alpha.1",
           "githubOrg": "tokio-rs",
-          "githubRepo": "tokio"
+          "githubRepo": "tokio",
+          "githubCommit": "HEAD"
         }
       ]
     }
