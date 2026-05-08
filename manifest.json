@@ -1272,7 +1272,7 @@
     },
     {
       "commit": "4d4d12613bb30f6b550421d6ce2c2c54eb5d341d",
-      "parsed_at": "2026-05-08T17:52:05.620243+00:00",
+      "parsed_at": "2026-05-08T22:12:11.743500+00:00",
       "tag": "tokio-util-0.7.15",
       "filetree": "filetree/4d4d12613bb30f6b550421d6ce2c2c54eb5d341d.nq.gz",
       "blobs": [
