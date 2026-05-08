@@ -1684,8 +1684,9 @@
     {
       "@id": "https://repolex.ai/r/tokio-rs/tokio/commit/9cc02cc88d083113cd9889a74b382e39e430e180",
       "git:hexsha": "9cc02cc88d083113cd9889a74b382e39e430e180",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "tokio-util-0.7.18"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "tokio-util-0.7.18",
+      "repolex:parsedAt": "2026-05-08T05:20:59.598819+00:00"
     },
     {
       "@id": "https://repolex.ai/r/tokio-rs/tokio/commit/038de361327ba67d8cb871c4761c4a6c1bb85eec",
