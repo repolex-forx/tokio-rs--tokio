@@ -1,0 +1,86 @@
+[2026-05-09T11:41:00Z] === ENRICH ITERATION 1 START | repo=tokio-rs/tokio sha=4d4d1261 ===
+[2026-05-09T11:41:00Z] [iter=1] PHASE START: enrich repo=tokio-rs/tokio sha=4d4d1261 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/4d4d1261-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/4d4d12613bb30f6b550421d6ce2c2c54eb5d341d.nq.gz
+[2026-05-09T11:41:00Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-05-09T11:41:47Z] [iter=1] AST store loaded triples=4867423 load_secs=45 mem_mb=899 MB
+[2026-05-09T11:41:47Z] [iter=1] Step 2: Finding LSP targets mem_mb=899 MB
+[2026-05-09T11:41:59Z] [iter=1] LSP targets found call_sites=34782 imports=2551 extends=0 implements=879 secs=12
+[2026-05-09T11:42:09Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=899 MB
+[2026-05-09T11:42:41Z] [iter=1] Position index built positions=339986 nodes_with_types=398270 secs=32 mem_mb=992 MB
+[2026-05-09T11:42:41Z] [iter=1] Step 3: Starting LSP resolution mem_mb=992 MB already_completed_types=[] already_completed_files=0
+[2026-05-09T11:42:41Z] [iter=1] Resolving target type target_type=call_site count=34782
+[2026-05-09T11:43:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=0 resolved=0 errors=0 current=tokio/src/util/memchr.rs
+[2026-05-09T11:43:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=1 resolved=24 errors=6 current=tokio-test/src/io.rs
+[2026-05-09T11:45:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=2 resolved=124 errors=51 current=benches/sync_semaphore.rs
+[2026-05-09T11:46:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=3 resolved=145 errors=94 current=tokio/tests/sync_broadcast.rs
+[2026-05-09T11:55:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.0 files_done=4 resolved=263 errors=338 current=tokio-util/src/util/poll_buf.rs
+[2026-05-09T11:56:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=8 resolved=513 errors=377 current=tokio/src/util/linked_list.rs
+[2026-05-09T12:02:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.6 files_done=9 resolved=590 errors=564 current=tokio/tests/net_unix_pipe.rs
+[2026-05-09T12:07:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.4 files_done=10 resolved=711 errors=708 current=tokio/src/sync/tests/notify.rs
+[2026-05-09T12:08:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=11 resolved=744 errors=728 current=tokio/tests/io_async_fd.rs
+[2026-05-09T12:17:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.1 files_done=12 resolved=893 errors=997 current=tokio-stream/src/wrappers/unix_listener.rs
+[2026-05-09T12:17:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.9 files_done=14 resolved=914 errors=1020 current=tokio/src/task/local.rs
+[2026-05-09T12:20:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.6 files_done=15 resolved=1013 errors=1100 current=benches/sync_watch.rs
+[2026-05-09T12:21:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.6 files_done=16 resolved=1031 errors=1130 current=tokio/src/runtime/blocking/pool.rs
+[2026-05-09T12:23:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.5 files_done=17 resolved=1092 errors=1187 current=tokio/src/util/metric_atomics.rs
+[2026-05-09T12:29:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.3 files_done=20 resolved=1309 errors=1361 current=tokio/src/io/util/buf_stream.rs
+[2026-05-09T12:30:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.2 files_done=21 resolved=1316 errors=1388 current=tokio/src/runtime/metrics/histogram.rs
+[2026-05-09T12:30:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.9 files_done=23 resolved=1329 errors=1408 current=tokio/tests/sync_panic.rs
+[2026-05-09T12:33:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.0 files_done=24 resolved=1367 errors=1472 current=tokio/src/sync/rwlock/write_guard.rs
+[2026-05-09T12:35:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=26 resolved=1459 errors=1539 current=benches/sync_notify.rs
+[2026-05-09T12:36:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.6 files_done=27 resolved=1471 errors=1579 current=tokio/src/util/rand/rt.rs
+[2026-05-09T12:37:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.8 files_done=29 resolved=1488 errors=1615 current=tokio/src/runtime/scheduler/multi_thread/idle.rs
+[2026-05-09T12:39:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.1 files_done=30 resolved=1501 errors=1654 current=tokio/src/io/util/read_buf.rs
+[2026-05-09T12:41:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.9 files_done=33 resolved=1596 errors=1737 current=tokio/src/runtime/scheduler/multi_thread/queue.rs
+[2026-05-09T12:43:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.8 files_done=34 resolved=1663 errors=1795 current=examples/named-pipe-multi-client.rs
+[2026-05-09T12:46:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.1 files_done=36 resolved=1732 errors=1864 current=tokio/tests/sync_semaphore.rs
+[2026-05-09T12:48:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.4 files_done=37 resolved=1776 errors=1930 current=tokio-util/tests/time_delay_queue.rs
+[2026-05-09T13:04:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.6 files_done=38 resolved=1887 errors=2414 current=tokio/src/runtime/scheduler/current_thread/mod.rs
+[2026-05-09T13:08:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.0 files_done=39 resolved=1965 errors=2544 current=tokio/src/runtime/scheduler/multi_thread/worker.rs
+[2026-05-09T13:13:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.8 files_done=40 resolved=2114 errors=2689 current=tokio-util/tests/codecs.rs
+[2026-05-09T13:18:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.4 files_done=41 resolved=2244 errors=2824 current=tokio/src/runtime/time/mod.rs
+[2026-05-09T13:20:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.8 files_done=42 resolved=2294 errors=2898 current=tokio-util/src/codec/framed.rs
+[2026-05-09T13:21:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.6 files_done=43 resolved=2301 errors=2922 current=tokio/src/sync/tests/semaphore_batch.rs
+[2026-05-09T13:24:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.0 files_done=44 resolved=2363 errors=3021 current=tokio/src/sync/rwlock/owned_write_guard.rs
+[2026-05-09T13:31:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.4 files_done=46 resolved=2489 errors=3211 current=tokio/src/fs/open_options.rs
+[2026-05-09T13:32:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.7 files_done=49 resolved=2529 errors=3250 current=tokio/src/runtime/context/scoped.rs
+[2026-05-09T13:33:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.7 files_done=51 resolved=2586 errors=3279 current=tokio/tests/uds_datagram.rs
+[2026-05-09T13:37:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.8 files_done=52 resolved=2668 errors=3403 current=tokio/src/io/util/write_all_buf.rs
+[2026-05-09T13:39:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.4 files_done=54 resolved=2709 errors=3448 current=examples/tinyhttp.rs
+[2026-05-09T13:41:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.7 files_done=55 resolved=2754 errors=3517 current=tokio/tests/tcp_into_split.rs
+[2026-05-09T13:43:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.7 files_done=57 resolved=2832 errors=3577 current=tokio/tests/task_trace_self.rs
+[2026-05-09T13:44:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.3 files_done=61 resolved=2859 errors=3593 current=tokio-util/tests/mpsc.rs
+[2026-05-09T13:51:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.3 files_done=62 resolved=2929 errors=3801 current=tokio/tests/tracing_time.rs
+[2026-05-09T13:54:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.3 files_done=64 resolved=2983 errors=3891 current=tokio-util/tests/spawn_pinned.rs
+[2026-05-09T13:56:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.2 files_done=65 resolved=3029 errors=3946 current=tokio/src/sync/broadcast.rs
+[2026-05-09T13:58:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=137.6 files_done=66 resolved=3155 errors=4018 current=tokio/tests/time_interval.rs
+[2026-05-09T14:06:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.7 files_done=67 resolved=3181 errors=4258 current=tokio/tests/fs_file.rs
+[2026-05-09T14:11:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.7 files_done=68 resolved=3232 errors=4405 current=tokio-util/tests/length_delimited.rs
+[2026-05-09T14:21:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.7 files_done=69 resolved=3327 errors=4704 current=tokio/src/io/util/sink.rs
+[2026-05-09T14:30:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=169.9 files_done=72 resolved=3767 errors=4979 current=examples/custom-executor.rs
+[2026-05-09T14:32:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=171.1 files_done=77 resolved=3871 errors=5013 current=tokio/tests/fs_link.rs
+[2026-05-09T14:35:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=174.6 files_done=80 resolved=3939 errors=5119 current=tokio-util/src/io/inspect.rs
+[2026-05-09T14:36:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=175.4 files_done=81 resolved=3946 errors=5143 current=tokio-util/tests/task_tracker.rs
+[2026-05-09T14:38:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=177.9 files_done=82 resolved=3972 errors=5218 current=benches/rt_current_thread.rs
+[2026-05-09T14:39:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=179.0 files_done=83 resolved=3979 errors=5249 current=tokio/tests/async_send_sync.rs
+[2026-05-09T14:53:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=192.9 files_done=84 resolved=3981 errors=5666 current=tokio/src/fs/file/tests.rs
+[2026-05-09T15:13:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=212.4 files_done=85 resolved=4160 errors=6246 current=benches/sync_mpsc.rs
+[2026-05-09T15:17:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=216.2 files_done=86 resolved=4194 errors=6360 current=tokio/tests/io_read_to_string.rs
+[2026-05-09T15:19:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=218.2 files_done=88 resolved=4297 errors=6421 current=tokio/src/runtime/builder.rs
+[2026-05-09T15:20:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=219.3 files_done=89 resolved=4358 errors=6453 current=tokio/src/runtime/io/scheduled_io.rs
+[2026-05-09T15:23:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=222.5 files_done=90 resolved=4394 errors=6548 current=tokio/src/io/util/buf_writer.rs
+[2026-05-09T15:25:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=224.1 files_done=91 resolved=4446 errors=6596 current=tokio/src/runtime/blocking/shutdown.rs
+[2026-05-09T15:26:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=225.8 files_done=93 resolved=4458 errors=6646 current=tokio/tests/io_driver.rs
+[2026-05-09T15:27:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=226.5 files_done=94 resolved=4470 errors=6668 current=tokio/src/task/join_set.rs
+[2026-05-09T15:29:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=228.3 files_done=95 resolved=4526 errors=6723 current=tokio/tests/time_sleep.rs
+[2026-05-09T15:31:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=230.2 files_done=98 resolved=4583 errors=6779 current=examples/connect-tcp.rs
+[2026-05-09T15:32:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.1 files_done=99 resolved=4594 errors=6804 current=benches/spawn.rs
+[2026-05-09T15:32:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=231.8 files_done=100 resolved=4615 errors=6826 current=tokio/src/runtime/tests/loom_multi_thread.rs
+[2026-05-09T15:33:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=233.0 files_done=102 resolved=4697 errors=6860 current=tokio/tests/time_rt.rs
+[2026-05-09T15:34:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=233.9 files_done=103 resolved=4714 errors=6887 current=tokio/tests/sync_rwlock.rs
+[2026-05-09T15:39:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=238.5 files_done=104 resolved=4752 errors=7024 current=tokio/tests/rt_local.rs
+[2026-05-09T15:40:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=239.2 files_done=107 resolved=4809 errors=7047 current=tokio/src/util/sharded_list.rs
+[2026-05-09T15:40:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=239.8 files_done=108 resolved=4824 errors=7064 current=tokio/tests/tracing_sync.rs
+[2026-05-09T15:41:05Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=110 new_files_this_iter=110 mem_mb=1082 MB
+[2026-05-09T15:41:05Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/4d4d12613bb30f6b550421d6ce2c2c54eb5d341d.nq.gz triples=75400
+[2026-05-09T15:41:06Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-05-09T15:41:06Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14405 elapsed_min=240.1 files_completed=110
